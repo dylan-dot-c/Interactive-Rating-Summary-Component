@@ -1,0 +1,113 @@
+@font-face{
+    font-family: 'Overpass';
+    src: url('Overpass-VariableFont_wght.ttf');
+}
+
+body{
+    background-color:hsl(216, 12%, 8%);
+    height: 100vh;
+    font-weight: 400;
+    font-size: 15px;
+    overflow: hidden;
+    font-family: 'Overpass', 'serif';
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.star-icon{
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.card{
+    max-width: 300px;
+    padding: 1rem;    
+    border-radius: 1rem;
+    background: -webkit-radial-gradient(top, circle, hsl(213, 19%, 18%), rgb(28, 31, 36) );  
+}
+
+.display-rating{
+    color: hsl(25, 97%, 53%);
+    text-align: center; 
+    margin: 0 auto;
+    background-color: hsl(213, 19%, 28%);
+    padding: 10px;;
+    border-radius: 1rem;
+    width: fit-content;
+}
+h2{
+    color: hsl(0, 0%, 100%);
+}
+
+.center{
+    text-align: center;
+}
+.thank-you{
+    margin-bottom: 15px;
+}
+.card-text{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+.rating,.selected{
+    background-color: hsl(213, 19%, 18%);
+    width: 20px;
+    height:20px; 
+    border-radius: 50%;
+    padding: 7px;
+    text-align: center;
+    color: white;
+    /* transition: .5s; */
+
+}
+
+.selected{
+    background-color: hsl(217, 12%, 63%);
+}
+
+.rating:hover{
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+
+}
+
+#submit{
+    width: 100%;
+    padding: 10px;
+    border-radius: 1rem;
+    border: 0;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#submit:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+.rating-div{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+@media screen and (max-width: 420px){
+    p{
+        font-size: 18px;
+    }
+    .card{
+        width: 100%;
+    }
+}
+.attribution { font-size: 11px; text-align: center; color: hsl(25, 97%, 53%) }
+.attribution a { color: hsl(228, 45%, 44%); }
